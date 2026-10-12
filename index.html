@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+                   maximum-scale=1.0, user-scalable=no">
+
+    <meta name="theme-color" content="#172b52">
+    <title>Star Catcher</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1>⭐ Star Catcher</h1>
+        <p class="subtitle">Catch stars. Avoid bombs!</p>
+
+        <div class="stats">
+            <div class="stat">
+                <span>Score</span>
+                <strong id="score">0</strong>
+            </div>
+
+            <div class="stat">
+                <span>Time</span>
+                <strong><span id="time">30</span>s</strong>
+            </div>
+
+            <div class="stat">
+                <span>Best</span>
+                <strong id="best">0</strong>
+            </div>
+        </div>
+
+        <div id="game" aria-label="Star Catcher game area">
+            <div class="moon">🌙</div>
+            <div class="hill hill-one"></div>
+            <div class="hill hill-two"></div>
+            <div id="basket">🧺</div>
+        </div>
+
+        <div class="game-controls">
+            <button id="start">▶ Start Game</button>
+            <button id="restart" hidden>🔄 Restart</button>
+        </div>
+        
+        <p id="message" role="status" aria-live="polite">
+            Ready? Catch as many stars as you can!
+        </p>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
